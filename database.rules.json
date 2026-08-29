@@ -1,0 +1,13 @@
+{
+  "rules": {
+    "rooms": {
+      "$roomId": {
+        ".read": true,
+        ".write": true,
+        ".validate": "$roomId.matches(/^JG-[A-Z0-9]{6}$/)"
+      }
+    },
+    ".read": false,
+    ".write": false
+  }
+}
